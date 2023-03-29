@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GPU.Controllers
 {
+	[Route("api/details")]
+	[ApiController]
 	public class DetailsController : ControllerBase
 	{
 		private readonly DBContext _context;
@@ -14,6 +16,8 @@ namespace GPU.Controllers
 		{
 			_context = context;
 		}
+		[HttpGet]
+		[Route("")]
 		public async Task<ICollection<Details>> GetAllDetailsAsync()
 		{
 			return await _context.Details.Include(x => x.Specifications).ToListAsync();

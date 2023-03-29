@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GPU.Controllers
 {
+	[Route("api/ports")]
+	[ApiController]
 	public class PortsController : ControllerBase
 	{
 		private readonly DBContext _context;
@@ -14,6 +16,8 @@ namespace GPU.Controllers
 		{
 			_context = context;
 		}
+		[HttpGet]
+		[Route("")]
 		public async Task<ICollection<Ports>> GetAllPortsAsync()
 		{
 			return await _context.Ports.Include(x => x.Specifications).ToListAsync();
