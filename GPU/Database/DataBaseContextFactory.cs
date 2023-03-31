@@ -13,7 +13,7 @@ namespace Database
 		public DBContext CreateDbContext(string[] args)
 		{
 			var optionsBuilder = new DbContextOptionsBuilder<DBContext>();
-			optionsBuilder.UseSqlServer("");
+			optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ForVlados;Integrated Security=True");
 			return new DBContext(optionsBuilder.Options);
 		}
 	}

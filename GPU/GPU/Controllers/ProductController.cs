@@ -1,8 +1,5 @@
-﻿using Database;
-using Entities;
-using Microsoft.AspNetCore.Cors.Infrastructure;
+﻿using Database.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace GPU.Controllers
 {
@@ -10,17 +7,22 @@ namespace GPU.Controllers
 	[ApiController]
 	public class ProductController : ControllerBase
 	{
-		private readonly DBContext _context;
+		private readonly IProductService _product;
 
-		public ProductController(DBContext context)
+		public ProductController(IProductService product)
 		{
-			_context = context;
+			_product = product;
 		}
 		[HttpGet]
 		[Route("")]
-		public async Task<ICollection<Product>> GetAllAsync()
+		public async Task<IActionResult> GetAllAsync()
 		{
-			return await _context.Products.Include(x => x.Specifications).ToListAsync();
+			var product = await _product.GetAllAsync();
+			if (product == null)
+			{
+				return NotFound("this category doesn`t exist!");
+			}
+			return Ok(product);
 		}
 	}
 }

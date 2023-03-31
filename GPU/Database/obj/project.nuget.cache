@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ROuUbStVUBO9ZTS9HjQR4vlSrZR6F4anYSnJ9kKcACc4fDhxdmE8l2mfUFWoenjt7tRRIEH9skk4fefn/FvZrQ==",
+  "dgSpecHash": "R9+SSeFOTjHJ8cBmcwsau9rEhEEsBLD4a28JnxK+V3sXBqecRQabJ8F3E1ytDkFPffIHaZPAjDZgtLt4q5AHXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\Database\\Database.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.4\\microsoft.entityframeworkcore.design.7.0.4.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.4\\microsoft.entityframeworkcore.relational.7.0.4.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.4\\microsoft.entityframeworkcore.sqlserver.7.0.4.nupkg.sha512",
-    "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.4\\microsoft.entityframeworkcore.tools.7.0.4.nupkg.sha512",
+    "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.8\\microsoft.entityframeworkcore.tools.6.0.8.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

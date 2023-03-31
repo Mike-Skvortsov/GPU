@@ -1,0 +1,17 @@
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\BLL.dll
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\BLL.pdb
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\Database.dll
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\Entities.dll
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\Database.pdb
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\bin\Debug\net7.0\Entities.pdb
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.dll
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\BLL.pdb
+C:\Users\MikeIt\source\repos\GPU_Shop\GPU\BLL\obj\Debug\net7.0\ref\BLL.dll
