@@ -1,13 +1,8 @@
-﻿using Database.Repositories.Interfaces;
+﻿using BLL.Services.Interfaces;
+using Database.Repositories.Interfaces;
 using Entities;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Database.Repositories.Implements
+namespace BLL.Services.Implements
 {
 	public class UserService : IUserService
 	{
@@ -16,7 +11,7 @@ namespace Database.Repositories.Implements
 		{
 			this._repository = repository;
 		}
-		public Task<ICollection<User>> GetAllAsync() => this._repository.GetAllAsync();
+		public Task<IEnumerable<User>> GetAllAsync() => this._repository.GetAllAsync();
 
 	}
 }

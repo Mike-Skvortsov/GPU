@@ -6,7 +6,7 @@ namespace Entities
 	{
 		public string? Title { get; set; }
 		public string? Description { get; set; }
-		public string? Price { get; set; }
+		public float? Price { get; set; }
 		public float Sale { get; set; }
 		public bool IsPresent { get; set; }
 		public string? Series { get; set; }
@@ -23,5 +23,6 @@ namespace Entities
 		public string Supported3DAPI { get; set; }
 		public bool IsHot { get; set; }
 		public bool IsNew { get; set; }
+		public byte[] Image { get; set; }
 	}
 }

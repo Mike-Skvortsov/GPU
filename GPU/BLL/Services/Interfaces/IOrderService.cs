@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database.Repositories.Interfaces
+namespace BLL.Services.Interfaces
 {
 	public interface IOrderService
 	{
-		Task<ICollection<Order>> GetAllAsync();
+		Task<IEnumerable<Order>> GetAllAsync();
 	}
 }

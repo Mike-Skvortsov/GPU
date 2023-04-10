@@ -9,16 +9,9 @@ using System.Threading.Tasks;
 
 namespace Database.Repositories.Implements
 {
-	public class OrderRepository : IOrderRepository
+	public class OrderRepository : BaseRepository<Order>, IOrderRepository
 	{
-		private readonly DBContext _context;
-		public OrderRepository(DBContext context)
-		{
-			this._context = context;
-		}
-		public async Task<ICollection<Order>> GetAllAsync()
-		{
-			return await this._context.Orders.Include(x => x.Products).ToListAsync();
-		}
+		public OrderRepository(DBContext dbContext) : base(dbContext)
+		{ }
 	}
 }

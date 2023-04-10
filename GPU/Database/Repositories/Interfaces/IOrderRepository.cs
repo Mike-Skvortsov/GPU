@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace Database.Repositories.Interfaces
 {
-	public interface IOrderRepository
+	public interface IOrderRepository: IBaseRepository<Order>
 	{
-		Task<ICollection<Order>> GetAllAsync();
-
 	}
 }

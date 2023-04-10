@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kYziCcmkypMcivNAw6tep9fJDxGMslBw0amBUcYrNidmfnEj7bTPYEarltMoYodNR4nRjlYquL+xHW+MEcXwhQ==",
+  "dgSpecHash": "wq7JZlVbBeLQWk9zQ7JT4P0HTITHHd8f3lAvtCgMxO1gAweqU/1A3/BZgFtdaPhTTHGzWnOG+QrqZnNCJunfZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MikeIt\\.nuget\\packages\\autofac\\7.0.0\\autofac.7.0.0.nupkg.sha512",
+    "C:\\Users\\MikeIt\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

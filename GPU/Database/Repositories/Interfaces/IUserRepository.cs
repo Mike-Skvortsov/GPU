@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Database.Repositories.Interfaces
 {
-	public interface IUserRepository
+	public interface IUserRepository: IBaseRepository<User>
 	{
-		Task<ICollection<User>> GetAllAsync();
 	}
 }

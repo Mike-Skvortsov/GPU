@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "R9+SSeFOTjHJ8cBmcwsau9rEhEEsBLD4a28JnxK+V3sXBqecRQabJ8F3E1ytDkFPffIHaZPAjDZgtLt4q5AHXQ==",
+  "dgSpecHash": "lKR27fwlyDQmlsNTra97kz9MAD8qhkXVfEYVpA6BXv4vWyrqUbTQ57vzKQy5Sl7KhvGdW/p26F2ot5Uw4e7ndA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\Database\\Database.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MikeIt\\.nuget\\packages\\autofac\\7.0.0\\autofac.7.0.0.nupkg.sha512",
+    "C:\\Users\\MikeIt\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -17,7 +19,7 @@
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.4\\microsoft.entityframeworkcore.design.7.0.4.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.4\\microsoft.entityframeworkcore.relational.7.0.4.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.4\\microsoft.entityframeworkcore.sqlserver.7.0.4.nupkg.sha512",
-    "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.8\\microsoft.entityframeworkcore.tools.6.0.8.nupkg.sha512",
+    "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.4\\microsoft.entityframeworkcore.tools.7.0.4.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\MikeIt\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
