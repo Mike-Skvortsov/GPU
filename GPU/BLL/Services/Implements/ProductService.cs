@@ -1,23 +1,28 @@
-﻿using BLL.Services.Interfaces;
+﻿using AutoMapper;
+using BLL.DTO.ProductDTO;
+using BLL.Services.Interfaces;
 using Database.Repositories.Interfaces;
 using Entities;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Services.Implements
 {
 	public class ProductService : IProductService
 	{
 		private readonly IProductRepository _repository;
-		public ProductService(IProductRepository repository)
+		private readonly IMapper _mapper;
+		public ProductService(IProductRepository repository, IMapper mapper)
 		{
 			this._repository = repository;
+			this._mapper = mapper;
 		}
-		public Task<IEnumerable<Product>> GetAllAsync() => this._repository.GetAllAsync();
-
+		public async Task<IEnumerable<AllProductDTO>> GetAllAsync()
+		{
+			var products = await _repository.GetAllAsync();
+			return _mapper.Map<IEnumerable<AllProductDTO>>(products);
+		}
+		public async Task<Product> GetProductById(int id)
+		{
+			return await _repository.GetProductById(id);
+		}
 	}
 }

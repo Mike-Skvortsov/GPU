@@ -1,21 +1,15 @@
-using Autofac;
 using Autofac.Core;
-using BLL.RegistrationModule;
+using BLL.AutoMapper.Profiles;
 using BLL.Services.Implements;
 using BLL.Services.Interfaces;
 using Database;
-using Database.RegostrationModule;
 using Database.Repositories.Implements;
 using Database.Repositories.Interfaces;
 using GPU.Extensions;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
-
-var containerBuilder = new ContainerBuilder();
-containerBuilder.RegisterModule<RegistrationModule>();
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddDbContext<DBContext>(op =>
 {
@@ -23,15 +17,16 @@ builder.Services.AddDbContext<DBContext>(op =>
 });
 
 builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-builder.Services.AddTransient<IProductRepository, ProductRepository>();
-
-// Services
 builder.Services.ServicesRegister();
+builder.Services.RepositoriesRegister();
 
-// AutoMapper
-builder.Services.AutoMapperProfilesRegister();
+// AutoMapper registration
+builder.Services.AddAutoMapperProfiles();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -45,7 +40,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
 
 app.MapControllers();
 

@@ -11,8 +11,7 @@ namespace Entities
 		public int UserId { get; set; }
 		public User User { get; set; }
 		public int Count { get; set; }
-
+		public DateTime DateTime { get; set; } = DateTime.Now;
 		public ICollection<Product> Products { get; set; }
-
 	}
 }

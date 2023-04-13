@@ -47,6 +47,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Autofac": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -240,9 +244,6 @@
             "projectReferences": {
               "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\BLL\\BLL.csproj": {
                 "projectPath": "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\BLL\\BLL.csproj"
-              },
-              "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\MikeIt\\source\\repos\\GPU_Shop\\GPU\\Database\\Database.csproj"
               }
             }
           }
@@ -265,6 +266,18 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.4, )"
@@ -274,6 +287,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

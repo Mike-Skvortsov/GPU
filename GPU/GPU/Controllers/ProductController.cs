@@ -1,5 +1,4 @@
 ﻿using BLL.Services.Interfaces;
-using Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GPU.Controllers
@@ -10,26 +9,26 @@ namespace GPU.Controllers
 	{
 		private readonly IProductService _productService;
 
-		public ProductController(IProductService productService)
+		public ProductController(IProductService productService)	
 		{
 			_productService = productService;
 		}
-		//[HttpGet]
-		//[Route("")]
-		//public async Task<IEnumerable<AllProductDTO> GetAllAsync()
-		//{
-		//	var product = await _productService.GetAllAsync();
-		//	if (product == null)
-		//	{
-		//		return NotFound("this category doesn`t exist!");
-		//	}
-		//	return Ok(product);
-		//}
-		//[HttpGet]
-		//[Route("{id}")]
-		//public async Task<Product> GetByIdAsync([FromBody] int id)
-		//{
-		//	var product 
-		//}
+
+		[HttpGet]
+		public async Task<IActionResult> GetAllProductAsync()
+		{
+			return Ok(await _productService.GetAllAsync());
+		}
+
+		[HttpGet]
+		[Route("{id}")]
+		public async Task<IActionResult> GetByIdAsync(int id)
+		{
+			var product = await _productService.GetProductById(id);
+			if (product == null)
+				return BadRequest("This product not exist");
+
+			return Ok(product);
+		}
 	}
 }

@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using BLL.DTO.ProductDTO;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace BLL.Services.Interfaces
 {
 	public interface IProductService
 	{
-		Task<IEnumerable<Product>> GetAllAsync();
+		Task<IEnumerable<AllProductDTO>> GetAllAsync();
+		Task<Product> GetProductById(int id);
 	}
 }

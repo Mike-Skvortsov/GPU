@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using BLL.DTO.OrderDTO;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace BLL.Services.Interfaces
 {
-	public interface IOrderService
+    public interface IOrderService
 	{
-		Task<IEnumerable<Order>> GetAllAsync();
+		Task<IEnumerable<OrderDTOAll>> GetAllAsync();
 	}
 }

@@ -33,9 +33,6 @@ namespace Database.Migrations
                     b.Property<string>("Brand")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -82,9 +79,6 @@ namespace Database.Migrations
                     b.Property<string>("ChipsetSeries")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -93,6 +87,10 @@ namespace Database.Migrations
 
                     b.Property<string>("GPUInterface")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("Image")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<bool>("IsHot")
                         .HasColumnType("bit");
@@ -119,8 +117,8 @@ namespace Database.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Price")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float?>("Price")
+                        .HasColumnType("real");
 
                     b.Property<float>("Sale")
                         .HasColumnType("real");
@@ -155,9 +153,6 @@ namespace Database.Migrations
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("EmailAddress")
                         .IsRequired()

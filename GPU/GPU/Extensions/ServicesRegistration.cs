@@ -1,5 +1,5 @@
-﻿using Database.Repositories.Implements;
-using Database.Repositories.Interfaces;
+﻿using BLL.Services.Implements;
+using BLL.Services.Interfaces;
 
 namespace GPU.Extensions
 {
@@ -7,7 +7,9 @@ namespace GPU.Extensions
 	{
 		public static IServiceCollection ServicesRegister(this IServiceCollection services)
 		{
-			services.AddTransient<IProductRepository, ProductRepository>();
+			services.AddTransient<IProductService, ProductService>();
+			services.AddTransient<IManufacturerService, ManufacturerService>();
+			services.AddTransient<IOrderService, OrderService>();
 			return services;
 		}
 	}
