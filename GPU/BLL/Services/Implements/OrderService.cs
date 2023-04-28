@@ -2,6 +2,7 @@
 using BLL.DTO.OrderDTO;
 using BLL.Services.Interfaces;
 using Database.Repositories.Interfaces;
+using Entities;
 
 namespace BLL.Services.Implements
 {

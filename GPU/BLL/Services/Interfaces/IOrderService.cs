@@ -11,5 +11,8 @@ namespace BLL.Services.Interfaces
     public interface IOrderService
 	{
 		Task<IEnumerable<OrderDTOAll>> GetAllAsync();
+		//Task<Order> UpdateAsync();
+		//Task<bool> DeleteAsync();
+
 	}
 }

@@ -10,7 +10,10 @@ namespace BLL.AutoMapper.Profiles
 		public ManufacturerProfile()
 		{
 			CreateMap<Manufacturer, ManufacturerDTO>();
+			CreateMap<ManufacturerDTO, Manufacturer>();
 			CreateMap<Manufacturer, ManufacturerDTOWithId>();
+			CreateMap<ManufacturerDTOWithId, Manufacturer>();
+
 		}
 	}
 }

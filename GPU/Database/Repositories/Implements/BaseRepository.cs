@@ -50,7 +50,6 @@ namespace Database.Repositories.Implements
 			_dbSet.Update(entity);
 			await SaveChangesAsync();
 			return entity;
-
 		}
 
 		public async Task SaveChangesAsync()
